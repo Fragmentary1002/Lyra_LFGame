@@ -1,0 +1,49 @@
+# 用户特定文件
+vs/
+# 编译生成的文件
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.mod
+*.lai
+*.la
+*.a
+*.lib
+*.exe
+*.out
+*.app
+*.ipa
+# Unreal Engine 生成的项目文件
+*.xcodeproj
+*.xcworkspace
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+vsconfig
+# 二进制文件
+Binaries/*
+Plugins/**/Binaries/*
+# 构建文件
+Build/*
+!Build/**/*.ico
+!Build/*/PakBlacklist*.txt
+# 中间文件
+Intermediate/*
+Plugins/**/Intermediate/*
+# 缓存文件
+DerivedDataCache/*
+# 地图生成数据
+*_BuiltData.uasset
+# 编辑器生成的配置文件
+Saved/*
+
+.idea/
