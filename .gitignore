@@ -47,3 +47,6 @@ DerivedDataCache/*
 Saved/*
 
 .idea/
+.vscode
+*.code-workspace
+*.ignore
