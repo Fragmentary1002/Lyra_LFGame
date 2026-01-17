@@ -378,6 +378,10 @@
 		{
 			"Name": "Reflex",
 			"Enabled": true
+		},
+		{
+			"Name": "LFGameCore",
+			"Enabled": true
 		}
 	],
 	"EpicSampleNameHash": "451731683"
