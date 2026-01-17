@@ -10,5 +10,11 @@ public class LyraGameSteamEOSTarget : LyraGameTarget
 	public LyraGameSteamEOSTarget(TargetInfo Target) : base(Target)
 	{
 		CustomConfig = "SteamEOS";
+		RegisterModulesCreatedByRider();
+	}
+
+	private void RegisterModulesCreatedByRider()
+	{
+		ExtraModuleNames.AddRange(new string[] { "LFGame" });
 	}
 }

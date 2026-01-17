@@ -8,5 +8,11 @@ public class LyraGameEOSTarget : LyraGameTarget
 	public LyraGameEOSTarget(TargetInfo Target) : base(Target)
 	{
 		CustomConfig = "EOS";
+		RegisterModulesCreatedByRider();
+	}
+
+	private void RegisterModulesCreatedByRider()
+	{
+		ExtraModuleNames.AddRange(new string[] { "LFGame" });
 	}
 }

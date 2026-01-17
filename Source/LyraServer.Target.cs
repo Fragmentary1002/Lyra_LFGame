@@ -15,5 +15,11 @@ public class LyraServerTarget : TargetRules
 		LyraGameTarget.ApplySharedLyraTargetSettings(this);
 
 		bUseChecksInShipping = true;
+		RegisterModulesCreatedByRider();
+	}
+
+	private void RegisterModulesCreatedByRider()
+	{
+		ExtraModuleNames.AddRange(new string[] { "LFGame" });
 	}
 }

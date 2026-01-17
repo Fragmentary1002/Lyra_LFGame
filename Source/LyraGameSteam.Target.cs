@@ -8,5 +8,11 @@ public class LyraGameSteamTarget : LyraGameTarget
 	public LyraGameSteamTarget(TargetInfo Target) : base(Target)
 	{
 		CustomConfig = "Steam";
+		RegisterModulesCreatedByRider();
+	}
+
+	private void RegisterModulesCreatedByRider()
+	{
+		ExtraModuleNames.AddRange(new string[] { "LFGame" });
 	}
 }

@@ -17,6 +17,14 @@
 			"Name": "LyraEditor",
 			"Type": "Editor",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "LFGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"LyraGame"
+			]
 		}
 	],
 	"Plugins": [

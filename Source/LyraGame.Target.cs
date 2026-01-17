@@ -17,6 +17,7 @@ public class LyraGameTarget : TargetRules
 		ExtraModuleNames.AddRange(new string[] { "LyraGame" });
 
 		LyraGameTarget.ApplySharedLyraTargetSettings(this);
+		RegisterModulesCreatedByRider();
 	}
 
 	private static bool bHasWarnedAboutShared = false;
@@ -279,5 +280,10 @@ public class LyraGameTarget : TargetRules
 			// If you use something like a release version, consider doing a reference validation to make sure
 			// that plugins with sooner release versions don't depend on content with later release versions
 		}
+	}
+
+	private void RegisterModulesCreatedByRider()
+	{
+		ExtraModuleNames.AddRange(new string[] { "LFGame" });
 	}
 }

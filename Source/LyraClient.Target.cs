@@ -12,5 +12,11 @@ public class LyraClientTarget : TargetRules
 		ExtraModuleNames.AddRange(new string[] { "LyraGame" });
 
 		LyraGameTarget.ApplySharedLyraTargetSettings(this);
+		RegisterModulesCreatedByRider();
+	}
+
+	private void RegisterModulesCreatedByRider()
+	{
+		ExtraModuleNames.AddRange(new string[] { "LFGame" });
 	}
 }
