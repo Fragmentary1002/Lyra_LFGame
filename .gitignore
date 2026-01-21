@@ -51,3 +51,4 @@ Saved/*
 *.code-workspace
 *.ignore
 LyraStarterGame.uproject.DotSettings.user
+Plugins/Developer/RiderLink
