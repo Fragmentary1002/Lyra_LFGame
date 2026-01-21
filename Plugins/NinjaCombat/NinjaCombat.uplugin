@@ -1,0 +1,59 @@
+{
+	"FileVersion": 3,
+	"Version": 3,
+	"VersionName": "1.15.4",
+	"FriendlyName": "NinjaCombat",
+	"Description": "Extends combat functionality and provides a simple combo system to the Gameplay Ability System.",
+	"Category": "Gameplay",
+	"CreatedBy": "Ninja Bear Studio Inc.",
+	"CreatedByURL": "https://www.ninjabear.studio",
+	"DocsURL": "https://docs.ninjabear.studio/Ninja-Combat",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/162210c6fc8e457b823d215fb1a300e3",
+	"SupportURL": "https://discord.gg/mkB5cQmDws",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "NinjaCombat",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Linux",
+				"Mac",
+				"Win64"
+			]
+		},
+		{
+			"Name": "NinjaCombatUI",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Linux",
+				"Mac",
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayStateTree",
+			"Enabled": true
+		},
+		{
+			"Name": "MotionWarping",
+			"Enabled": true
+		},
+		{
+			"Name": "TargetingSystem",
+			"Enabled": true
+		}
+	]
+}
