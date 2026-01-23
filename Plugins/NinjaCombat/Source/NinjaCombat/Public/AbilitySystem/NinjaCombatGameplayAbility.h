@@ -19,7 +19,7 @@ DECLARE_LOG_CATEGORY_EXTERN(LogNinjaCombatAbility, Log, All);
 //  在Ninja Combat中所有的Ability都需要继承自这个类
 //  这边更改到ULyraGameplayAbility 为了适配Lyra 框架
 UCLASS(Abstract)
-class NINJACOMBAT_API UNinjaCombatGameplayAbility : public ULyraGameplayAbility
+class NINJACOMBAT_API UNinjaCombatGameplayAbility : public UGameplayAbility
 {
 	
 	GENERATED_BODY()
