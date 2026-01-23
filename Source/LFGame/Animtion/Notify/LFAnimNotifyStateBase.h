@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Animation/AnimNotifies/AnimNotifyState.h"
+#include "GameplayTagContainer.h"
 #include "LFAnimNotifyStateBase.generated.h"
 
 /**
@@ -15,4 +16,7 @@ class ULFAnimNotifyStateBase : public UAnimNotifyState
 public:
 	// 构造函数
 	ULFAnimNotifyStateBase();
+
+	// 添加游戏性标签
+	bool AddGameplayTags(const FGameplayTag& GameplayTag, bool bIsActivate);
 };
