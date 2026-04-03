@@ -45,7 +45,7 @@ void ULFGameAbilityComboDispatcher::ActivateAbility(const FGameplayAbilitySpecHa
 		ASC->AddLooseGameplayTag(Tag_Attacking);
 		
 		// 启动连招重置定时器
-		StartComboResetTimer(ActorInfo);
+		// StartComboResetTimer(ActorInfo);
 	}
 	else if (CanCombo(ASC))
 	{
@@ -62,7 +62,7 @@ void ULFGameAbilityComboDispatcher::ActivateAbility(const FGameplayAbilitySpecHa
 		UpdateCurrentComboTag(ASC, NextPhase);
 		
 		// 重启连招重置定时器
-		StartComboResetTimer(ActorInfo);
+		// StartComboResetTimer(ActorInfo);
 	}
 
 	// 结束调度器能力
